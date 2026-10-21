@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func isPositive(n int) bool {
+func isPositive(n int) bool { // задача 1
 	if n > 0 {
 		return true
 	}
@@ -10,7 +10,7 @@ func isPositive(n int) bool {
 
 }
 
-func bigger(a int, b int) int {
+func bigger(a int, b int) int { // задача 2
 	if a > b {
 		return a
 	}
@@ -18,7 +18,7 @@ func bigger(a int, b int) int {
 	return b
 }
 
-func sign(n int) string {
+func sign(n int) string { // задача 3
 	if n == 0 {
 		return "ноль"
 	} else if n > 0 {
@@ -27,7 +27,7 @@ func sign(n int) string {
 	return "минус"
 }
 
-func countEven(n int) int {
+func countEven(n int) int { // задача 4
 	count := 0
 	for i := 1; i <= n; i++ {
 		if i%2 == 0 {

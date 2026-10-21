@@ -10,6 +10,6 @@ func main() {
 	const width = 2.5
 	height := 4.0
 	fmt.Println(rectangleArea(width, height))
-	height = 10.0
+	height = 11.0
 	fmt.Println(rectangleArea(width, height))
 }
