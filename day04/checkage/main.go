@@ -15,8 +15,17 @@ func checkAge(age int) (string, error) {
 	}
 }
 
+func show(age int) {
+	result, err := checkAge(age)
+	if err != nil {
+		fmt.Println(age, "→ ошибка:", err)
+		return
+	}
+	fmt.Println(age, "→", result)
+}
+
 func main() {
-	fmt.Println(checkAge(-5))
-	fmt.Println(checkAge(10))
-	fmt.Println(checkAge(50))
+	show(-5)
+	show(10)
+	show(50)
 }
