@@ -18,20 +18,20 @@ func main() {
 		{5, "Anna", 2500, "paid"},
 	}
 
-	// total := 0
-	// for _, o := range orders {
-	// 	if o.Status == "paid" {
-	// 		total = total + o.Amount
-	// 	}
-	// }
-	// fmt.Println(total)
+	total := 0
+	for _, o := range orders {
+		if o.Status == "paid" {
+			total = total + o.Amount
+		}
+	}
+	fmt.Println(total)
 
-	// cancelled := 0
-	// for _, o := range orders {
-	// 	if o.Status == "cancelled" {
-	// 		cancelled++
-	// 	}
-	// }
-	// fmt.Println(cancelled)
+	cancelled := 0
+	for _, o := range orders {
+		if o.Status == "cancelled" {
+			cancelled++
+		}
+	}
+	fmt.Println(cancelled)
 
 }
