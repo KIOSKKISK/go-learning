@@ -21,3 +21,4 @@ func (a Account) Info() string {
 func main() {
 	acc := NewAccount("Igor")
 	fmt.Println(acc.Info())
+}
